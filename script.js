@@ -10,21 +10,29 @@
 */
 
 document.getElementById('stopButton').addEventListener('click', function(){
-  document.getElementById('stopLight').style.backgroundColor = "red";
+  var stopLight = document.getElementById('stopLight');
   document.getElementById('slowLight').style.backgroundColor = "";
   document.getElementById('goLight').style.backgroundColor = "";
+  if(stopLight.style.backgroundColor === "") return stopLight.style.backgroundColor = "red";
+  stopLight.style.backgroundColor = "";
 });
 
 
 document.getElementById('slowButton').addEventListener('click', function(){
+  var slowLight = document.getElementById('slowLight');
   document.getElementById('stopLight').style.backgroundColor = "";
-  document.getElementById('slowLight').style.backgroundColor = "yellow";
   document.getElementById('goLight').style.backgroundColor = "";
+  if(slowLight.style.backgroundColor === "") return slowLight.style.backgroundColor = "yellow";
+  slowLight.style.backgroundColor = "";
 });
 
 
 document.getElementById('goButton').addEventListener('click', function(){
+
+  var goLight = document.getElementById('goLight');
   document.getElementById('stopLight').style.backgroundColor = "";
   document.getElementById('slowLight').style.backgroundColor = "";
-  document.getElementById('goLight').style.backgroundColor = "green";
+
+  if(goLight.style.backgroundColor === "") return goLight.style.backgroundColor = "green";
+  goLight.style.backgroundColor = "";
 });
