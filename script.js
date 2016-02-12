@@ -8,3 +8,7 @@
   When I click on the 'go' button
     the bottom light should turn green.
 */
+
+document.getElementById('stopButton').addEventListener('click', function(){
+  document.getElementById('stopLight').style.backgroundColor = "red";
+});
