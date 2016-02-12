@@ -11,4 +11,20 @@
 
 document.getElementById('stopButton').addEventListener('click', function(){
   document.getElementById('stopLight').style.backgroundColor = "red";
+  document.getElementById('slowLight').style.backgroundColor = "";
+  document.getElementById('goLight').style.backgroundColor = "";
+});
+
+
+document.getElementById('slowButton').addEventListener('click', function(){
+  document.getElementById('stopLight').style.backgroundColor = "";
+  document.getElementById('slowLight').style.backgroundColor = "yellow";
+  document.getElementById('goLight').style.backgroundColor = "";
+});
+
+
+document.getElementById('goButton').addEventListener('click', function(){
+  document.getElementById('stopLight').style.backgroundColor = "";
+  document.getElementById('slowLight').style.backgroundColor = "";
+  document.getElementById('goLight').style.backgroundColor = "green";
 });
