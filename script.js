@@ -13,6 +13,25 @@ var stop = document.querySelector('#stopButton');
 var slow = document.querySelector('#slowButton');
 var go = document.querySelector('#goButton');
 
+
+stop.addEventListener('click', function () {
+  document.querySelector('#stopLight').style.backgroundColor = "rgb(242, 13, 13)";
+  document.querySelector('#slowLight').style.backgroundColor = "rgb(0, 0, 0)";
+  document.querySelector('#goLight').style.backgroundColor = "rgb(0, 0, 0)";
+});
+
+slow.addEventListener('click', function () {
+  document.querySelector('#stopLight').style.backgroundColor = "rgb(0, 0, 0)";
+  document.querySelector('#slowLight').style.backgroundColor = "rgb(243, 255, 10)";
+  document.querySelector('#goLight').style.backgroundColor = "rgb(0, 0, 0)";
+});
+
+go.addEventListener('click', function () {
+  document.querySelector('#stopLight').style.backgroundColor = "rgb(0, 0, 0)";
+  document.querySelector('#slowLight').style.backgroundColor = "rgb(0, 0, 0)";
+  document.querySelector('#goLight').style.backgroundColor = "rgb(0, 255, 3)";
+});
+
 // stop.addEventListener('click', function () {
 // document.querySelector('#stopLight').style.backgroundColor= "rgb(246, 9, 37)";
 // ('#stopLight').toggle();
@@ -29,21 +48,3 @@ var go = document.querySelector('#goButton');
 // document.querySelector('#goLight').style.backgroundColor= "rgb(11, 250, 49)";
 // ('#goLight').toggle();
 // });
-
-stop.addEventListener('click', function () {
-  document.querySelector('#stopLight').style.backgroundColor = "red";
-  document.querySelector('#slowLight').style.backgroundColor = "black";
-  document.querySelector('#goLight').style.backgroundColor = "black";
-});
-
-slow.addEventListener('click', function () {
-  document.querySelector('#stopLight').style.backgroundColor = "black";
-  document.querySelector('#slowLight').style.backgroundColor = "yellow";
-  document.querySelector('#goLight').style.backgroundColor = "black";
-})
-
-go.addEventListener('click', function () {
-  document.querySelector('#stopLight').style.backgroundColor = "black";
-  document.querySelector('#slowLight').style.backgroundColor = "black";
-  document.querySelector('#goLight').style.backgroundColor = "green";
-})
