@@ -9,10 +9,10 @@
     the bottom light should turn green.
 */
 
-// var stop = document.querySelector('#stopButton');
-// var slow = document.querySelector('#slowButton');
-// var go = document.querySelector('#goButton');
-//
+var stop = document.querySelector('#stopButton');
+var slow = document.querySelector('#slowButton');
+var go = document.querySelector('#goButton');
+
 // stop.addEventListener('click', function () {
 // document.querySelector('#stopLight').style.backgroundColor= "rgb(246, 9, 37)";
 // ('#stopLight').toggle();
@@ -30,24 +30,20 @@
 // ('#goLight').toggle();
 // });
 
-var stopButton = document.getElementById('stopButton');
-var slowButton = document.getElementById('slowButton');
-var goButton = document.getElementById('goButton');
-
-stopButton.addEventListener('click', function(){
-  document.getElementById('stopLight').style.backgroundColor = "red";
-  document.getElementById('slowLight').style.backgroundColor = "black";
-  document.getElementById('goLight').style.backgroundColor = "black";
+stop.addEventListener('click', function () {
+  document.querySelector('#stopLight').style.backgroundColor = "red";
+  document.querySelector('#slowLight').style.backgroundColor = "black";
+  document.querySelector('#goLight').style.backgroundColor = "black";
 });
 
-slowButton.addEventListener('click', function(){
-  document.getElementById('slowLight').style.backgroundColor = "yellow";
-  document.getElementById('stopLight').style.backgroundColor = "black";
-  document.getElementById('goLight').style.backgroundColor = "black";
-});
+slow.addEventListener('click', function () {
+  document.querySelector('#stopLight').style.backgroundColor = "black";
+  document.querySelector('#slowLight').style.backgroundColor = "yellow";
+  document.querySelector('#goLight').style.backgroundColor = "black";
+})
 
-goButton.addEventListener('click', function(){
-  document.getElementById('goLight').style.backgroundColor = "green";
-  document.getElementById('stopLight').style.backgroundColor = "black";
-  document.getElementById('slowLight').style.backgroundColor = "black";
-});
+go.addEventListener('click', function () {
+  document.querySelector('#stopLight').style.backgroundColor = "black";
+  document.querySelector('#slowLight').style.backgroundColor = "black";
+  document.querySelector('#goLight').style.backgroundColor = "green";
+})
