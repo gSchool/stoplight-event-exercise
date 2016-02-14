@@ -10,6 +10,15 @@ Wire up the buttons to the left of the stoplight to toggle the on/off state of e
 
 ## Hints
 
-* Retrieve a DOMElement with [`document.querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) or similar method
-* Attach event listeners with [`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-* Set the color of a bulb with [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
+* Retrieve a DOMElement with
+[`document.querySelector`]
+(https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+ or similar method
+
+* Attach event listeners with
+[`addEventListener`]
+(https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+* Set the color of a bulb with
+ [`background-color`]
+ (https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
