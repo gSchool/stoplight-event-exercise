@@ -9,6 +9,10 @@
     the bottom light should turn green.
 */
 
+var stop = document.querySelector('#stopButton');
+var slow = document.querySelector('#slowButton');
+var go = document.querySelector('#goButton');
+
 stop.addEventListener('click', function () {
 document.querySelector('#stopLight').style.backgroundColor= "rgb(246, 9, 37)";
 ('#stopLight').toggle();
@@ -26,9 +30,7 @@ document.querySelector('#goLight').style.backgroundColor= "rgb(11, 250, 49)";
 ('#goLight').toggle();
 });
 
-var stop = document.querySelector('#stopButton');
-var slow = document.querySelector('#slowButton');
-var go = document.querySelector('#goButton');
+
 
 
 // stop.addEventListener('click', function () {
