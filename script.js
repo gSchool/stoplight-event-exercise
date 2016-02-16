@@ -16,11 +16,26 @@ var slowLight = document.getElementById('slowLight');
 var goLight = document.getElementById('goLight');
 
 stopButton.addEventListener('click', function() {
-  stopLight.style.backgroundColor = 'red';
+  if(stopLight.style.backgroundColor == 'black'){
+    stopLight.style.backgroundColor = 'red';
+  }
+  else{
+    stopLight.style.backgroundColor = 'black';
+  }
 })
 slowButton.addEventListener('click', function() {
-  slowLight.style.backgroundColor = 'orange';
+  if(slowLight.style.backgroundColor == 'black'){
+    slowLight.style.backgroundColor = 'orange';
+  }
+  else{
+    slowLight.style.backgroundColor = 'black';
+  }
 })
 goButton.addEventListener('click', function() {
-  goLight.style.backgroundColor = 'green';
+  if(goLight.style.backgroundColor == 'black'){
+    goLight.style.backgroundColor = 'green';
+  }
+  else{
+    goLight.style.backgroundColor = 'black';
+  }
 })
