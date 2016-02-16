@@ -12,15 +12,12 @@
 function $(selector){
   var newSelector;
   if(selector.charAt(0) === '.'){
-    console.log("class");
     newSelector = selector.slice(1, selector.length);
     return document.getElementsByClassName(newSelector);
   } else if (selector.charAt(0) === '#'){
-    console.log("id");
     newSelector = selector.slice(1, selector.length);
     return document.getElementById(newSelector);
   } else {
-    console.log("element");
     return document.getElementsByTagName(selector);
   }
 }
