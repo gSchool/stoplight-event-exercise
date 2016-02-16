@@ -1,10 +1,20 @@
-/*
-  Write JS to make this stoplight work.
+document.getElementById('stopButton').addEventListener('click', changeColorStop);
+var stopLight = document.querySelector("#stopLight");
 
-  When I click on the 'stop' button,
-    the top light should turn red.
-  When I click on the 'slow' button
-    the middle light should turn orange.
-  When I click on the 'go' button
-    the bottom light should turn green.
-*/
+function changeColorStop() {
+  stopLight.style.backgroundColor = (stopLight.style.backgroundColor === 'red') ? 'black' : 'red';
+}
+
+document.getElementById('slowButton').addEventListener('click', changeColorSlow);
+var slowLight = document.querySelector("#slowLight");
+
+function changeColorSlow() {
+  slowLight.style.backgroundColor = (slowLight.style.backgroundColor === 'yellow') ? 'black' : 'yellow';
+}
+
+document.getElementById('goButton').addEventListener('click', changeColorGo);
+var goLight = document.querySelector("#goLight");
+
+function changeColorGo() {
+  goLight.style.backgroundColor = (goLight.style.backgroundColor === 'green') ? 'black' : 'green';
+}
