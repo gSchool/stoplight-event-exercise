@@ -1,10 +1,29 @@
-/*
-  Write JS to make this stoplight work.
+function toggleRed() {
+    var clicked = document.getElementById('stopLight')
+    if (clicked.className == 'bulb') {
+      clicked.className = 'bulbRed';
+    } else {
+      clicked.className = 'bulb';
+    };
+}
+stopButton.addEventListener("click", toggleRed);
 
-  When I click on the 'stop' button,
-    the top light should turn red.
-  When I click on the 'slow' button
-    the middle light should turn orange.
-  When I click on the 'go' button
-    the bottom light should turn green.
-*/
+function toggleOrange() {
+    var clicked = document.getElementById('slowLight')
+    if (clicked.className == 'bulb') {
+      clicked.className = 'bulbOrange';
+    } else {
+      clicked.className = 'bulb';
+    };
+}
+slowButton.addEventListener("click", toggleOrange);
+
+function toggleGreen() {
+    var clicked = document.getElementById('goLight')
+    if (clicked.className == 'bulb') {
+      clicked.className = 'bulbGreen';
+    } else {
+      clicked.className = 'bulb';
+    };
+}
+goButton.addEventListener("click", toggleGreen);
