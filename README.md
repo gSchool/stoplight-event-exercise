@@ -4,7 +4,7 @@ As always, fork and clone this repo.
 
 ## Stoplight
 
-For this exercise, you will be creating a web page that looks like a spotlight with buttons that make changes to the light. Open up `script.js` in your editor for the directions. Once completed, try out the challenges and the bonus below.
+For this exercise, you will be creating a web page that looks like a stoplight with buttons that make changes to the light. Open up `script.js` in your editor for the directions. Once completed, try out the challenges and the bonus below.
 
 #### Challenge One: Button Click
 
