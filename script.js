@@ -18,6 +18,14 @@ stopButton.addEventListener("click", function(){
   stopLight.style.backgroundColor = color;
 });
 
+stopButton.addEventListener("mouseenter", function(){
+  console.log(`Entered ${this.textContent} button`);
+});
+
+stopButton.addEventListener("mouseleave", function(){
+  console.log(`Left ${this.textContent} button`);
+});
+
 var slowButton = document.querySelector("#slowButton");
 var slowLight = document.getElementById('slowLight');
 
@@ -27,6 +35,14 @@ slowButton.addEventListener("click", function(){
   slowLight.style.backgroundColor = color;
 });
 
+slowButton.addEventListener("mouseenter", function(){
+  console.log(`Entered ${this.textContent} button`);
+});
+
+slowButton.addEventListener("mouseleave", function(){
+  console.log(`Left ${this.textContent} button`);
+});
+
 var goButton = document.querySelector("#goButton");
 var goLight = document.getElementById('goLight');
 
@@ -34,4 +50,18 @@ goButton.addEventListener("click", function(){
   var color;
   goLight.style.backgroundColor === "green" ? color = "" : color = "green";
   goLight.style.backgroundColor = color;
+});
+
+goButton.addEventListener("mouseenter", function(){
+  console.log(`Entered ${this.textContent} button`);
+});
+
+goButton.addEventListener("mouseleave", function(){
+  console.log(`Left ${this.textContent} button`);
+});
+
+var controls = document.querySelector('#controls');
+
+controls.addEventListener('click', function(event) {
+  console.log(event.target.textContent);
 });
