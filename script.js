@@ -63,5 +63,14 @@ goButton.addEventListener("mouseleave", function(){
 var controls = document.querySelector('#controls');
 
 controls.addEventListener('click', function(event) {
-  console.log(event.target.textContent);
+  var text = event.target.textContent;
+  var status;
+  if (text === 'Stop') {
+    status = stopLight.style.backgroundColor === 'red' ? 'on' : 'off';
+  } else if (text === 'Slow') {
+    status = slowLight.style.backgroundColor === 'orange' ? 'on' : 'off';
+  } else {
+    status = goLight.style.backgroundColor === 'green' ? 'on' : 'off';
+  }
+  console.log(`${text} bulb ${status}`);
 });

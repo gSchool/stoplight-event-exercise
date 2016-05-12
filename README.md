@@ -6,19 +6,25 @@ As always, fork and clone this repo. Submit a Pull Request when you are done.
 
 #### Challenge One: Button Click
 
-Wire up the buttons to the left of the stoplight so that when clicked, the corresponding bulb will turn on and any others will turn off.
+Wire up the controls to the left of the stoplight so that when a button is clicked, the corresponding bulb will turn on and all others will turn off.
 
 #### Challenge Two: Button Toggle
 
-Alter you event listeners to toggle the on/off state of each bulb. All three lights can be on or off for this challenge.
+Alter your event listeners to toggle the on/off state of each bulb. All three bulbs can be on or off from now on.
 
-#### Challenge Three: Hover/Group Handler
+#### Challenge Three: Group "Hover" Handler
 
-A) Keep your existing code, but add new event listeners on each of your buttons that log `"Entered [textContent] button"` when a user mouses over a button.
+* Keep your existing code, but add new event listeners on each of your buttons that log `"Entered <textContent> button"` when a user mouses over a button.
 
-B) Add new event listeners on each of your buttons that log `"Left [textContent] button"` when a user mouses out.
+* Add new event listeners on each of your buttons that log `"Left <textContent> button"` when a user mouses out.
 
-C) Add a single event listener on all three buttons as a group. In your group event handler, log the `textContent` of each button when a user clicks the button.
+* Add a single event listener on all three buttons as a group. In your group event handler, log the `textContent` of each button when a user clicks the button.
+
+#### Bonus Challenge: On/Off Message
+
+* If the corresponding bulb is off when a user clicks a button, change the log message in your group event listener to say `"<textContent> bulb on"`
+
+* If the corresponding bulb is on when a user clicks a button, change the log message in your group event listener to say `"<textContent> bulb off"`
 
 ![Screenshot of the stop bulb lit up](screenshot.png)
 
