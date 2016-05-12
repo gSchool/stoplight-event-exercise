@@ -1,6 +1,6 @@
 # Stoplight Exercise
 
-As always, fork and clone this repo. Submit a Pull Request when you are done.
+As always, fork and clone this repo.
 
 ## Stoplight
 
