@@ -4,6 +4,10 @@ As always, fork and clone this repo.
 
 ## Stoplight
 
+For this exercise, you will be creating a web page that looks like a spotlight with buttons that make changes to the light. Open up `script.js` in your editor for the directions. Once completed, try out the challenges and the bonus below.
+
+![Screenshot of the stop bulb lit up](screenshot.png)
+
 #### Challenge One: Button Click
 
 Wire up the controls to the left of the stoplight so that when a button is clicked, the corresponding bulb will turn on and all others will turn off.
@@ -25,8 +29,6 @@ Alter your event listeners to toggle the on/off state of each bulb. All three bu
 * If the corresponding bulb is off when a user clicks a button, change the log message in your group event listener to say `"<textContent> bulb on"`
 
 * If the corresponding bulb is on when a user clicks a button, change the log message in your group event listener to say `"<textContent> bulb off"`
-
-![Screenshot of the stop bulb lit up](screenshot.png)
 
 ## Hints
 
