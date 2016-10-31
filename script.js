@@ -12,7 +12,12 @@ var stopBtn = $('#stopButton');
 var slowBtn = $('#slowButton');
 var goBtn = $('#goButton');
 
-$('.button').mouseover(function() {
-  var text = $(this).text();
-  console.log(`Entered ${text} button`);
-})
+$('.button')
+  .mouseover(function() {
+    var text = $(this).text();
+    console.log(`Entered ${text} button`);
+  })
+  .mouseleave(function() {
+    var text = $(this).text();
+    console.log(`Left ${text} button`);
+  })
