@@ -31,3 +31,15 @@
   margin: 25px auto;
   transition: background 500ms;
 }
+
+.on#goLight {
+  background: green;
+}
+
+.on#slowLight {
+  background: orange;
+}
+
+.on#stopLight {
+  background: red;
+}
