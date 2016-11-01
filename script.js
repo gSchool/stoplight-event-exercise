@@ -57,10 +57,24 @@ for (var i=0;i<buttonArr.length;i++) {
           if(stopLight.style.backgroundColor ==="red"){
             stopLight.style.backgroundColor =  "#111";
           }
-          else{
+          else if(goLight.style.backgroundColor ==="green"){
+            stopLight.style.backgroundColor =  "#111";
+            goLight.style.backgroundColor =  "#111";
+            slowLight.style.backgroundColor = "yellow";
+            window.setTimeout(turnRed,5000);
+            function turnRed(){
+              slowLight.style.backgroundColor =  "#111";
+              stopLight.style.backgroundColor = "red";
+            }
+          }
+          else if((slowLight.style.backgroundColor === "yellow")||(stopLight.style.backgroundColor =  "#111")){
           stopLight.style.backgroundColor = "red";
           slowLight.style.backgroundColor =  "#111";
           goLight.style.backgroundColor =  "#111";
+          }
+
+          else{
+
           }
           break;
 
