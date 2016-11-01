@@ -48,5 +48,37 @@ for (var i=0;i<buttonArr.length;i++) {
     thisButton.addEventListener("click", function(event) {
       var buttonPushedText = event.srcElement.textContent;
       console.log(buttonPushedText);
+      switch (buttonPushedText){
+          case "Stop":
+          var stopLight = document.getElementById("stopLight");
+          if(stopLight.style.backgroundColor ==="red"){
+            stopLight.style.backgroundColor =  "#111";
+          }
+          else{
+          stopLight.style.backgroundColor = "red";
+          }
+          break;
+
+          case "Slow":
+          var slowLight = document.getElementById("slowLight");
+          if(slowLight.style.backgroundColor ==="yellow"){
+            slowLight.style.backgroundColor =  "#111";
+          }
+          else{
+          slowLight.style.backgroundColor = "yellow";
+          }
+          break;
+
+          case "Go":
+          var goLight = document.getElementById("goLight");
+          if(goLight.style.backgroundColor ==="green"){
+            goLight.style.backgroundColor =  "#111";
+          }
+          else{
+          goLight.style.backgroundColor = "green";
+          }
+          break;
+
+      }
     });
 }
