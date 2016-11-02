@@ -18,10 +18,16 @@ var slowLight = document.getElementById('slowLight');
 var goButton = document.getElementById("goButton")
 var goLight = document.getElementById("goLight")
 
-function turnRed() {
+function redBulb() {
   stopLight.style.background = "red";
   slowLight.style.background = "black";
+}
+
+function turnRed() {
+  stopLight.style.background = "black";
+  slowLight.style.background = "yellow";
   goLight.style.background = "black";
+  setTimeout (redBulb, 5000);
 }
 
 function turnYellow() {
@@ -53,22 +59,3 @@ goButton.addEventListener("mouseover", showContent);
 stopButton.addEventListener("mouseout", leaveButton);
 slowButton.addEventListener("mouseout", leaveButton);
 goButton.addEventListener("mouseout", leaveButton);
-// answer in jquery
-
-$('#stopButton').click(function(){
-  $('#stopLight').css("background-color", "red");
-  $('#slowLight').css("background-color", "black");
-  $('#goLight').css("background-color", "black");
-});
-
-$('#slowButton').click(function(){
-  $('#slowLight').css("background-color", "yellow");
-  $('#stopLight').css("background-color", "black");
-  $('#goLight').css("background-color", "black");
-});
-
-$('#goButton').click(function(){
-  $('#goLight').css("background-color", "green");
-  $('#slowLight').css("background-color", "black");
-  $('#stopLight').css("background-color", "black");
-});
