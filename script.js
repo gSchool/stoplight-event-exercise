@@ -21,6 +21,7 @@ $(document).ready(function() {
   $('.button').click(buttonClick);
 
 
+
 });
 
 function mouseIn(event) {
@@ -32,5 +33,5 @@ function mouseOut(event) {
 }
 
 function buttonClick(event) {
-  console.log($('.button').text());
+  console.log($(this).text());
 }
