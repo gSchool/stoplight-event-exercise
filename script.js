@@ -34,4 +34,48 @@ function mouseOut(event) {
 
 function buttonClick(event) {
   console.log($(this).text());
+  
+  var $thisID = $(this).attr('id');
+  var $stopColor = $('#stopLight').css('background-color');
+  var $slowColor = $('#slowLight').css('background-color');
+  var $goColor = $('#goLight').css('background-color');
+
+  if ($thisID === 'stopButton' && $stopColor === 'rgb(17, 17, 17)') {
+    makeRed();
+  } else if ($thisID === 'stopButton' && $stopColor === 'rgb(255, 0, 0)') {
+    stopOff();
+  } else if ($thisID === 'slowButton' && $slowColor === 'rgb(17, 17, 17)') {
+    makeYellow();
+  } else if ($thisID === 'slowButton' && $slowColor === 'rgb(255, 255, 0)') {
+    slowOff();
+  } else if ($thisID === 'goButton' && $goColor === 'rgb(17, 17, 17)') {
+    makeGreen();
+  } else {
+    goOff();
+  }
+}
+
+
+function stopOff() {
+  $('#stopLight').css('background-color', 'rgb(17, 17, 17)');
+}
+
+function slowOff() {
+  $('#slowLight').css('background-color', 'rgb(17, 17, 17)');
+}
+
+function goOff() {
+  $('#goLight').css('background-color', 'rgb(17, 17, 17)');
+}
+
+function makeRed() {
+  $('#stopLight').css('background-color', 'rgb(255, 0, 0)');
+}
+
+function makeYellow() {
+  $('#slowLight').css('background-color', 'rgb(255, 255, 0)')
+}
+
+function makeGreen() {
+  $('#goLight').css('background-color', 'rgb(0, 128, 0)');
 }
