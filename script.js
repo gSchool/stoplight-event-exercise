@@ -19,9 +19,6 @@ $(document).ready(function() {
   $('#goButton').mouseout(mouseOut);
 
   $('.button').click(buttonClick);
-
-
-
 });
 
 function mouseIn(event) {
@@ -40,7 +37,14 @@ function buttonClick(event) {
   var $slowColor = $('#slowLight').css('background-color');
   var $goColor = $('#goLight').css('background-color');
 
-  if ($thisID === 'stopButton' && $stopColor === 'rgb(17, 17, 17)') {
+  if ($thisID === 'stopButton' && $goColor === 'rgb(0, 128, 0)') {
+    goOff();
+    makeYellow();
+    setTimeout(function() {
+      makeRed();
+      $('#slowLight').css('background-color', 'rgb(17, 17, 17)');
+    }, 5000);
+  } else if ($thisID === 'stopButton' && $stopColor === 'rgb(17, 17, 17)') {
     makeRed();
     slowOff();
     goOff();
@@ -60,7 +64,6 @@ function buttonClick(event) {
     goOff();
   }
 }
-
 
 function stopOff() {
   $('#stopLight').css('background-color', 'rgb(17, 17, 17)');
