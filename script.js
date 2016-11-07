@@ -1,23 +1,9 @@
-/*
-  Write JS to make this stoplight work.
-
-  When I click on the 'stop' button,
-    the top light should turn red.
-  When I click on the 'slow' button
-    the middle light should turn orange.
-  When I click on the 'go' button
-    the bottom light should turn green.
-*/
-
 $(document).ready(function() {
-  $('#stopButton').mouseover(mouseIn);
-  $('#slowButton').mouseover(mouseIn);
-  $('#goButton').mouseover(mouseIn);
-
-  $('#stopButton').mouseout(mouseOut);
-  $('#slowButton').mouseout(mouseOut);
-  $('#goButton').mouseout(mouseOut);
-
+  //Mouse over event
+  $('.button').mouseover(mouseIn);
+  //Mouse out event
+  $('.button').mouseout(mouseOut);
+  //Button click event
   $('.button').click(buttonClick);
 });
 
@@ -42,7 +28,7 @@ function buttonClick(event) {
     makeYellow();
     setTimeout(function() {
       makeRed();
-      $('#slowLight').css('background-color', 'rgb(17, 17, 17)');
+      slowOff();
     }, 5000);
   } else if ($thisID === 'stopButton' && $stopColor === 'rgb(17, 17, 17)') {
     makeRed();
@@ -82,7 +68,7 @@ function makeRed() {
 }
 
 function makeYellow() {
-  $('#slowLight').css('background-color', 'rgb(255, 255, 0)')
+  $('#slowLight').css('background-color', 'rgb(255, 255, 0)');
 }
 
 function makeGreen() {
