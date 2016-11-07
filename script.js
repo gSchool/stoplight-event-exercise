@@ -34,7 +34,7 @@ function mouseOut(event) {
 
 function buttonClick(event) {
   console.log($(this).text());
-  
+
   var $thisID = $(this).attr('id');
   var $stopColor = $('#stopLight').css('background-color');
   var $slowColor = $('#slowLight').css('background-color');
@@ -42,14 +42,20 @@ function buttonClick(event) {
 
   if ($thisID === 'stopButton' && $stopColor === 'rgb(17, 17, 17)') {
     makeRed();
+    slowOff();
+    goOff();
   } else if ($thisID === 'stopButton' && $stopColor === 'rgb(255, 0, 0)') {
     stopOff();
   } else if ($thisID === 'slowButton' && $slowColor === 'rgb(17, 17, 17)') {
     makeYellow();
+    stopOff();
+    goOff();
   } else if ($thisID === 'slowButton' && $slowColor === 'rgb(255, 255, 0)') {
     slowOff();
   } else if ($thisID === 'goButton' && $goColor === 'rgb(17, 17, 17)') {
     makeGreen();
+    stopOff();
+    slowOff();
   } else {
     goOff();
   }
