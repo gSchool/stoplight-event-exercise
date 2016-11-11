@@ -8,9 +8,9 @@ As always, fork and clone this repository.
 
 Add DOM event listeners and handlers to toggle the on/off state of three bulbs.
 
-- When a user clicks on the "Stop" button, toggle the top bulb's color to `red`.
-- When a user clicks on the "Slow" button, toggle the middle bulb's color to `orange`.
-- When a user clicks on the "Go" button, toggle the bottom bulb's color to `green`.
+- When a user clicks on the "Stop" button, toggle the stop bulb's color.
+- When a user clicks on the "Slow" button, toggle the slow bulb's color.
+- When a user clicks on the "Go" button, toggle the go bulb's.
 
 **TIP**: All three bulbs can be on/off independently of one another.
 
@@ -19,7 +19,7 @@ Add DOM event listeners and handlers to toggle the on/off state of three bulbs.
 - [MDN - `Document.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 - [MDN - `EventTarget.addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 - [MDN - `click`](https://developer.mozilla.org/en-US/docs/Web/Events/click)
-- [MDN -  `background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
+- [MDN -  `Element.classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 
 ## Part 2
 
@@ -38,7 +38,7 @@ Add new DOM event listeners and handlers to log the mouse state of each button.
 
 ## Bonus
 
-Add **one** new DOM event listener and **one** handler to log the state of each bulb.
+Add **one** DOM event listener and **one** handler to log the state of each bulb.
 
 - When a user clicks a button that just turned on, log`"<textContent> bulb on"` to the console.
 - When a user clicks a button that just turned off, log`"<textContent> bulb off"` to the console.

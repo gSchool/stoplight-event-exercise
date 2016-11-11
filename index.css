@@ -33,3 +33,15 @@
   transition: background 300ms;
   width: 150px;
 }
+
+.stop {
+  background-color: red;
+}
+
+.slow {
+  background-color: orange;
+}
+
+.go {
+  background-color: green;
+}

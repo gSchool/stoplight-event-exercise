@@ -11,21 +11,15 @@
 
   // part 1
   stopButton.addEventListener('click', () => {
-    const color = stopLight.style.backgroundColor === 'red' ? '' : 'red';
-
-    stopLight.style.backgroundColor = color;
+    stopLight.classList.toggle('stop');
   });
 
   slowButton.addEventListener('click', () => {
-    const color = slowLight.style.backgroundColor === 'orange' ? '' : 'orange';
-
-    slowLight.style.backgroundColor = color;
+    slowLight.classList.toggle('slow');
   });
 
   goButton.addEventListener('click', () => {
-    const color = goLight.style.backgroundColor === 'green' ? '' : 'green';
-
-    goLight.style.backgroundColor = color;
+    goLight.classList.toggle('go');
   });
 
   // part 2
@@ -56,13 +50,13 @@
     let status;
 
     if (event.target === stopButton) {
-      status = stopLight.style.backgroundColor === 'red' ? 'on' : 'off';
+      status = stopLight.classList.contains('stop') ? 'on' : 'off';
     }
     else if (event.target === slowButton) {
-      status = slowLight.style.backgroundColor === 'orange' ? 'on' : 'off';
+      status = slowLight.classList.contains('slow') ? 'on' : 'off';
     }
     else {
-      status = goLight.style.backgroundColor === 'green' ? 'on' : 'off';
+      status = goLight.classList.contains('go') ? 'on' : 'off';
     }
 
     console.log(`${event.target.textContent} bulb ${status}`);
