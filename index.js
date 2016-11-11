@@ -20,7 +20,6 @@
     // else {
     //   stopLight.classList.add('stop');
     // }
-
   });
 
   slowButton.addEventListener('click', () => {
