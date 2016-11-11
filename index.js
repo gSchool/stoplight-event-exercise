@@ -31,29 +31,21 @@
   });
 
   // part 2
-  stopButton.addEventListener('mouseenter', (event) => {
+  const handleMouseEnter = function(event) {
     console.log(`Entered ${event.target.textContent} button`);
-  });
+  };
 
-  stopButton.addEventListener('mouseleave', (event) => {
+  const handleMouseLeave = function(event) {
     console.log(`Left ${event.target.textContent} button`);
-  });
+  };
 
-  slowButton.addEventListener('mouseenter', (event) => {
-    console.log(`Entered ${event.target.textContent} button`);
-  });
+  stopButton.addEventListener('mouseenter', handleMouseEnter);
+  slowButton.addEventListener('mouseenter', handleMouseEnter);
+  goButton.addEventListener('mouseenter', handleMouseEnter);
 
-  slowButton.addEventListener('mouseleave', (event) => {
-    console.log(`Left ${event.target.textContent} button`);
-  });
-
-  goButton.addEventListener('mouseenter', (event) => {
-    console.log(`Entered ${event.target.textContent} button`);
-  });
-
-  goButton.addEventListener('mouseleave', (event) => {
-    console.log(`Left ${event.target.textContent} button`);
-  });
+  stopButton.addEventListener('mouseleave', handleMouseLeave);
+  slowButton.addEventListener('mouseleave', handleMouseLeave);
+  goButton.addEventListener('mouseleave', handleMouseLeave);
 
   // bonus
   controls.addEventListener('click', (event) => {
