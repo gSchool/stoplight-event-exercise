@@ -12,6 +12,15 @@
   // part 1
   stopButton.addEventListener('click', () => {
     stopLight.classList.toggle('stop');
+
+    // or...
+    // if (stopLight.classList.contains('stop')) {
+    //   stopLight.classList.remove('stop');
+    // }
+    // else {
+    //   stopLight.classList.add('stop');
+    // }
+
   });
 
   slowButton.addEventListener('click', () => {
@@ -51,6 +60,14 @@
 
     if (event.target === stopButton) {
       status = stopLight.classList.contains('stop') ? 'on' : 'off';
+
+      // or...
+      // if (stopLight.classList.contains('stop')) {
+      //   status = 'on';
+      // }
+      // else {
+      //   status = 'off';
+      // }
     }
     else if (event.target === slowButton) {
       status = slowLight.classList.contains('slow') ? 'on' : 'off';
