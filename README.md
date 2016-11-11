@@ -2,7 +2,7 @@
 
 As always, fork and clone this repo.
 
-![](screenshot.png)
+![](stoplight.png)
 
 ## Part 1
 
