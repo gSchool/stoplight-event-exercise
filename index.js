@@ -9,8 +9,6 @@
   const slowLight = document.querySelector('#slowLight');
   const goLight = document.querySelector('#goLight');
 
-  const controls = document.querySelector('#controls');
-
   // part 1
   stopButton.addEventListener('click', () => {
     const color = stopLight.style.backgroundColor === 'red' ? '' : 'red';
@@ -48,6 +46,8 @@
   goButton.addEventListener('mouseleave', handleMouseLeave);
 
   // bonus
+  const controls = document.querySelector('#controls');
+
   controls.addEventListener('click', (event) => {
     if (event.target === controls) {
       return;
