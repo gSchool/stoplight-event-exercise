@@ -9,68 +9,82 @@
     the bottom light should turn green.
 */
 
-var stopButton = document.querySelector("#stopButton");
-var stopLight = document.getElementById('stopLight');
+(function() {
+  'use strict';
 
-stopButton.addEventListener("click", function(){
-  var color;
-  stopLight.style.backgroundColor === "red" ? color = "" : color = "red";
-  stopLight.style.backgroundColor = color;
-});
+  const stopButton = document.querySelector('#stopButton');
+  const slowButton = document.querySelector('#slowButton');
+  const goButton = document.querySelector('#goButton');
 
-stopButton.addEventListener("mouseenter", function(){
-  console.log(`Entered ${this.textContent} button`);
-});
+  const stopLight = document.querySelector('#stopLight');
+  const slowLight = document.querySelector('#slowLight');
+  const goLight = document.querySelector('#goLight');
 
-stopButton.addEventListener("mouseleave", function(){
-  console.log(`Left ${this.textContent} button`);
-});
+  const controls = document.querySelector('#controls');
 
-var slowButton = document.querySelector("#slowButton");
-var slowLight = document.getElementById('slowLight');
+  // stopButton
+  stopButton.addEventListener('click', () => {
+    const color = stopLight.style.backgroundColor === 'red' ? '' : 'red';
 
-slowButton.addEventListener("click", function(){
-  var color;
-  slowLight.style.backgroundColor === "orange" ? color = "" : color = "orange";
-  slowLight.style.backgroundColor = color;
-});
+    stopLight.style.backgroundColor = color;
+  });
 
-slowButton.addEventListener("mouseenter", function(){
-  console.log(`Entered ${this.textContent} button`);
-});
+  stopButton.addEventListener('mouseenter', (event) => {
+    console.log(`Entered ${event.target.textContent} button`);
+  });
 
-slowButton.addEventListener("mouseleave", function(){
-  console.log(`Left ${this.textContent} button`);
-});
+  stopButton.addEventListener('mouseleave', (event) => {
+    console.log(`Left ${event.target.textContent} button`);
+  });
 
-var goButton = document.querySelector("#goButton");
-var goLight = document.getElementById('goLight');
+  // slowButton
+  slowButton.addEventListener('click', () => {
+    const color = slowLight.style.backgroundColor === 'orange' ? '' : 'orange';
 
-goButton.addEventListener("click", function(){
-  var color;
-  goLight.style.backgroundColor === "green" ? color = "" : color = "green";
-  goLight.style.backgroundColor = color;
-});
+    slowLight.style.backgroundColor = color;
+  });
 
-goButton.addEventListener("mouseenter", function(){
-  console.log(`Entered ${this.textContent} button`);
-});
+  slowButton.addEventListener('mouseenter', (event) => {
+    console.log(`Entered ${event.target.textContent} button`);
+  });
 
-goButton.addEventListener("mouseleave", function(){
-  console.log(`Left ${this.textContent} button`);
-});
+  slowButton.addEventListener('mouseleave', (event) => {
+    console.log(`Left ${event.target.textContent} button`);
+  });
 
-var controls = document.querySelector('#controls');
+  // goButton
+  goButton.addEventListener('click', () => {
+    const color = goLight.style.backgroundColor === 'green' ? '' : 'green';
 
-controls.addEventListener('click', function(event) {
-  var text = event.target.textContent;
-  var status;
-  if (text === 'Stop') {
-    status = stopLight.style.backgroundColor === 'red' ? 'on' : 'off';
-  } else if (text === 'Slow') {
-    status = slowLight.style.backgroundColor === 'orange' ? 'on' : 'off';
-  } else {
-    status = goLight.style.backgroundColor === 'green' ? 'on' : 'off';
-  }
-  console.log(`${text} bulb ${status}`);
-});
+    goLight.style.backgroundColor = color;
+  });
+
+  goButton.addEventListener('mouseenter', (event) => {
+    console.log(`Entered ${event.target.textContent} button`);
+  });
+
+  goButton.addEventListener('mouseleave', (event) => {
+    console.log(`Left ${event.target.textContent} button`);
+  });
+
+  // controls
+  controls.addEventListener('click', (event) => {
+    if (event.target === controls) {
+      return;
+    }
+
+    let status;
+
+    if (event.target === stopButton) {
+      status = stopLight.style.backgroundColor === 'red' ? 'on' : 'off';
+    }
+    else if (event.target === slowButton) {
+      status = slowLight.style.backgroundColor === 'orange' ? 'on' : 'off';
+    }
+    else {
+      status = goLight.style.backgroundColor === 'green' ? 'on' : 'off';
+    }
+
+    console.log(`${event.target.textContent} bulb ${status}`);
+  });
+})();
