@@ -6,7 +6,7 @@ As always, fork and clone this repository.
 
 ## Part 1
 
-Add DOM event listeners to toggle the on/off state of three bulbs.
+Add DOM event listeners and handlers to toggle the on/off state of three bulbs.
 
 - When a user clicks on the "Stop" button, toggle the top bulb's color to `red`.
 - When a user clicks on the "Slow" button, toggle the middle bulb's color to `orange`.
@@ -23,7 +23,7 @@ Add DOM event listeners to toggle the on/off state of three bulbs.
 
 ## Part 2
 
-Add new DOM event listeners to log the mouse state of each button.
+Add new DOM event listeners and handlers to log the mouse state of each button.
 
 - When a user's mouse enters a button, log `"Entered <textContent> button"` to the console.
 - When a user's mouse leaves a button, log `"Left <textContent> button"` to the console.
@@ -38,7 +38,7 @@ Add new DOM event listeners to log the mouse state of each button.
 
 ## Bonus
 
-Add **one** new DOM event listener to log the state of each bulb.
+Add **one** new DOM event listener and **one** handler to log the state of each bulb.
 
 - When a user clicks a button that just turned on, log`"<textContent> bulb on"` to the console.
 - When a user clicks a button that just turned off, log`"<textContent> bulb off"` to the console.
