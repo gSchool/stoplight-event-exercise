@@ -34,6 +34,7 @@ Add new DOM event listeners to log the mouse state of each button.
 
 - [MDN - `mouseenter`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter)
 - [MDN - `mouseleave`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseleave)
+- [MDN - `Event.target`](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
 
 ## Bonus
 
