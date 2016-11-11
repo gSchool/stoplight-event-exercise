@@ -49,6 +49,6 @@ Add **one** DOM event listener and **one** handler to log the state of each bulb
 
 - [How JavaScript Event Delegation Works](https://davidwalsh.name/event-delegate)
 
-[stop-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L37
-[slow-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L41
-[go-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L45
+[stop-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L39
+[slow-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L43
+[go-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L47
