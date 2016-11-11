@@ -1,6 +1,9 @@
+body {
+  display: flex;
+}
+
 #controls {
-  float: left;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .button {
@@ -18,7 +21,6 @@
 #traffic-light {
   background-color: #ababab;
   border-radius: 40px;
-  float: left;
   margin: 30px 0;
   height: 550px;
   padding: 20px;
