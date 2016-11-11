@@ -8,9 +8,9 @@ As always, fork and clone this repository.
 
 Add DOM event listeners and handlers to toggle the on/off state of three bulbs.
 
-- When a user clicks on the "Stop" button, toggle the stop bulb's color.
-- When a user clicks on the "Slow" button, toggle the slow bulb's color.
-- When a user clicks on the "Go" button, toggle the go bulb's.
+- When a user clicks on the "Stop" button, toggle the [stop bulb's color][stop-color].
+- When a user clicks on the "Slow" button, toggle the [slow bulb's color][slow-color].
+- When a user clicks on the "Go" button, toggle the [go bulb's color][go-color].
 
 **TIP**: All three bulbs can be on/off independently of one another.
 
@@ -48,3 +48,7 @@ Add **one** DOM event listener and **one** handler to log the state of each bulb
 ### Resources
 
 - [How JavaScript Event Delegation Works](https://davidwalsh.name/event-delegate)
+
+[stop-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L37
+[slow-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L41
+[go-color]: https://github.com/gSchool/stoplight-event-exercise/blob/master/index.css#L45
