@@ -29,11 +29,11 @@
   });
 
   // part 2
-  const handleMouseEnter = function(event) {
+  const handleMouseEnter = (event) => {
     console.log(`Entered ${event.target.textContent} button`);
   };
 
-  const handleMouseLeave = function(event) {
+  const handleMouseLeave = (event) => {
     console.log(`Left ${event.target.textContent} button`);
   };
 
