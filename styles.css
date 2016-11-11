@@ -5,29 +5,31 @@
 
 .button {
   background-color: gray;
-  color: white;
   border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 90px 40px;
   padding: 20px;
   text-align: center;
-  margin: 90px 40px;
-  cursor: pointer;
 }
 
 #traffic-light {
-  height: 550px;
-  width: 200px;
-  float: left;
   background-color: #ababab;
   border-radius: 40px;
+  float: left;
   margin: 30px 0;
+  height: 550px;
   padding: 20px;
+  width: 200px;
 }
 
 .bulb {
-  height: 150px;
-  width: 150px;
   background-color: #111;
   border-radius: 50%;
   margin: 25px auto;
-  transition: background 500ms;
+  height: 150px;
+  transition: background 300ms;
+  width: 150px;
 }
