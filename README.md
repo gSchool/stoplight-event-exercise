@@ -2,7 +2,7 @@
 
 As always, fork and clone this repo.
 
-![Screenshot of the stop bulb lit up](screenshot.png)
+![](stoplight.png)
 
 ## Part 1
 
