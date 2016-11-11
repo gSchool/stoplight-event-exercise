@@ -25,8 +25,8 @@ Add DOM event listeners to toggle the on/off state of three bulbs.
 
 Add new DOM event listeners to log the mouse state of each button.
 
-- When a user's mouse "enters" a button, log `"Entered <textContent> button"` to the console.
-- When a user's mouse "leaves" a button, log `"Left <textContent> button"` to the console.
+- When a user's mouse enters a button, log `"Entered <textContent> button"` to the console.
+- When a user's mouse leaves a button, log `"Left <textContent> button"` to the console.
 
 **TIP:** Each event type will need a separate event listener.
 
