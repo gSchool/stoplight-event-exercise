@@ -8,9 +8,9 @@ As always, fork and clone this repository.
 
 Add DOM event listeners to toggle the on/off state of three bulbs.
 
-- When a user clicks on the "Stop" button, the top bulb should turn `red`.
-- When a user clicks on the "Slow" button, the middle bulb should turn `orange`.
-- When a user clicks on the "Go" button, the bottom bulb should turn `green`.
+- When a user clicks on the "Stop" button, toggle the top bulb's color to `red`.
+- When a user clicks on the "Slow" button, toggle the middle bulb's color to `orange`.
+- When a user clicks on the "Go" button, toggle the bottom bulb's color to `green`.
 
 **TIP**: All three bulbs can be on/off independently of one another.
 
