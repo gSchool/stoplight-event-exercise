@@ -1,6 +1,6 @@
 # Stoplight Exercise
 
-As always, fork and clone this repo.
+As always, fork and clone this repository.
 
 ![](stoplight.png)
 
