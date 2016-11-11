@@ -2,7 +2,7 @@
 
 As always, fork and clone this repository.
 
-![](stoplight.png)
+![](stoplight.gif)
 
 ## Part 1
 
