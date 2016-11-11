@@ -28,6 +28,8 @@ Add new DOM event listeners to log the mouse state of each button.
 - When a user's mouse "enters" a button, log `"Entered <textContent> button"` to the console.
 - When a user's mouse "leaves" a button, log `"Left <textContent> button"` to the console.
 
+**TIP:** Each event type will need a separate event listener.
+
 ### Resources
 
 - [MDN - `mouseenter`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter)
@@ -40,4 +42,8 @@ Add **one** new DOM event listener to log the state of each bulb.
 - When a user clicks a button that just turned on, log`"<textContent> bulb on"` to the console.
 - When a user clicks a button that just turned off, log`"<textContent> bulb off"` to the console.
 
-**TIP:** Make sure only a button click causes a message to be logged to the console.
+**TIP:** A click on only a button should cause a message to be logged to the console.
+
+### Resources
+
+- [How JavaScript Event Delegation Works](https://davidwalsh.name/event-delegate)
