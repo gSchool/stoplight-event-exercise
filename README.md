@@ -1,36 +1,41 @@
 # Stoplight Exercise
 
-As always, fork and clone this repo. Submit a Pull Request when you are done.
-
-## Stoplight
-
-#### Challenge One: Button Click
-
-Wire up the controls to the left of the stoplight so that when a button is clicked, the corresponding bulb will turn on and all others will turn off.
-
-#### Challenge Two: Button Toggle
-
-Alter your event listeners to toggle the on/off state of each bulb. All three bulbs can be on or off from now on.
-
-#### Challenge Three: Group "Hover" Handler
-
-* Keep your existing code, but add new event listeners on each of your buttons that log `"Entered <textContent> button"` when a user mouses over a button.
-
-* Add new event listeners on each of your buttons that log `"Left <textContent> button"` when a user mouses out.
-
-* Add a single event listener on all three buttons as a group. In your group event handler, log the `textContent` of each button when a user clicks the button.
-
-#### Bonus Challenge: On/Off Message
-
-* If the corresponding bulb is off when a user clicks a button, change the log message in your group event listener to say `"<textContent> bulb on"`
-
-* If the corresponding bulb is on when a user clicks a button, change the log message in your group event listener to say `"<textContent> bulb off"`
+As always, fork and clone this repo.
 
 ![Screenshot of the stop bulb lit up](screenshot.png)
 
-## Hints
+#### Part 1
 
-* Retrieve a DOMElement with [`document.querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) or similar method
-* Attach event listeners with [`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-* Set the color of a bulb with [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
-* Explore the various options of [`MouseEvent`](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)
+Add JavaScript DOM event listeners to toggle the on/off state of three bulbs.
+
+- When a user clicks on the "Stop" button, the top bulb should turn `red`.
+- When a user clicks on the "Slow" button, the middle bulb should turn `orange`.
+- When a user clicks on the "Go" button, the bottom bulb should turn `green`.
+
+**TIP**: All three bulbs can be on/off independently of one another.
+
+##### Resources
+
+- [MDN - `Document.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+- [MDN - `EventTarget.addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [MDN - `click`](https://developer.mozilla.org/en-US/docs/Web/Events/click)
+- [MDN -  `background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
+
+#### Part 2
+
+Add new event listeners to log the mouse state of each button.
+
+- When a user's mouse "enters" a button, log `"Entered <textContent> button"` to the console.
+- When a user's mouse "leaves" a button, log `"Left <textContent> button"` to the console.
+
+##### Resources
+
+- [MDN - `mouseenter`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter)
+- [MDN - `mouseleave`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseleave)
+
+#### Bonus
+
+Add **one** new event listener to log the state of each bulb.
+
+- When a user clicks a button that just turned on, log`"<textContent> bulb on"` to the console.
+- When a user clicks a button that just turned off, log`"<textContent> bulb off"` to the console.
