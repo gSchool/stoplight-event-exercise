@@ -4,7 +4,7 @@ As always, fork and clone this repo.
 
 ![Screenshot of the stop bulb lit up](screenshot.png)
 
-#### Part 1
+## Part 1
 
 Add JavaScript DOM event listeners to toggle the on/off state of three bulbs.
 
@@ -14,26 +14,26 @@ Add JavaScript DOM event listeners to toggle the on/off state of three bulbs.
 
 **TIP**: All three bulbs can be on/off independently of one another.
 
-##### Resources
+#### Resources
 
 - [MDN - `Document.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 - [MDN - `EventTarget.addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 - [MDN - `click`](https://developer.mozilla.org/en-US/docs/Web/Events/click)
 - [MDN -  `background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
 
-#### Part 2
+## Part 2
 
 Add new event listeners to log the mouse state of each button.
 
 - When a user's mouse "enters" a button, log `"Entered <textContent> button"` to the console.
 - When a user's mouse "leaves" a button, log `"Left <textContent> button"` to the console.
 
-##### Resources
+#### Resources
 
 - [MDN - `mouseenter`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter)
 - [MDN - `mouseleave`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseleave)
 
-#### Bonus
+## Bonus
 
 Add **one** new event listener to log the state of each bulb.
 
