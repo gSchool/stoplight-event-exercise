@@ -14,7 +14,7 @@ Add DOM event listeners to toggle the on/off state of three bulbs.
 
 **TIP**: All three bulbs can be on/off independently of one another.
 
-#### Resources
+### Resources
 
 - [MDN - `Document.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 - [MDN - `EventTarget.addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
@@ -28,7 +28,7 @@ Add new DOM event listeners to log the mouse state of each button.
 - When a user's mouse "enters" a button, log `"Entered <textContent> button"` to the console.
 - When a user's mouse "leaves" a button, log `"Left <textContent> button"` to the console.
 
-#### Resources
+### Resources
 
 - [MDN - `mouseenter`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter)
 - [MDN - `mouseleave`](https://developer.mozilla.org/en-US/docs/Web/Events/mouseleave)
