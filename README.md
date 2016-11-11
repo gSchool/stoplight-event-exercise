@@ -39,3 +39,5 @@ Add **one** new DOM event listener to log the state of each bulb.
 
 - When a user clicks a button that just turned on, log`"<textContent> bulb on"` to the console.
 - When a user clicks a button that just turned off, log`"<textContent> bulb off"` to the console.
+
+**TIP:** Make sure only a button click causes a message to be logged to the console.
