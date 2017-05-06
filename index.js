@@ -15,10 +15,10 @@
     document.getElementById("slowLight").classList.toggle('slow');
   });
   document.getElementById("slowButton").addEventListener("mouseenter", function() {
-    console.log("Entered slow button");
+    console.log("Entered stop button");
   });
   document.getElementById("slowButton").addEventListener("mouseleave", function() {
-    console.log("Leave slow button");
+    console.log("Leave stop button");
   });
 
   document.getElementById("goButton").addEventListener("click", function() {
