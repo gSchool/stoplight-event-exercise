@@ -76,23 +76,46 @@
     // - When a user clicks a button that just turned on, log`"<textContent> bulb on"` to the console.
 
 
-    ///NOT WORKING..NEED HELP
+
 
     anyBtn.forEach( ( button ) => {
-        button.on( 'click change', ( event ) => {
-            let bulbType = event.target;
-            let bulbTypeText = bulbType.textContent;
+        button.addEventListener( 'click', ( event ) => {
+            let btnBulb = event.target;
+            let btnTypeText = btnBulb.textContent;
 
             //if bulbType.style.backgroundColor==="black" // log button off
+            switch ( btnTypeText ) {
+                case "Stop":
+                    if ( stopBulb.style.backgroundColor === "black" ) {
+                        console.log( btnTypeText + " button off" );
+                    } else {
+                        console.log( btnTypeText + " button on" );
+                    };
 
-            if ( bulbType.style.backgroundColor === "black" ) {
-                console.log( bulbTypeText + " button off" );
+                    break;
+                case "Slow":
+                    if ( slowBulb.style.backgroundColor === "black" ) {
+
+                        console.log( btnTypeText + " button off" );
+                    } else {
+                        console.log( btnTypeText + " button on" );
+                    };
+
+                    break;
+                case "Go":
+                    if ( goBulb.style.backgroundColor === "black" ) {
+
+                        console.log( btnTypeText + " button off" );
+                    } else {
+                        console.log( btnTypeText + " button on" );
+                    };
+
+                    break;
+                default:
+                    break;
 
             }
-            // else log button on
-            else {
-                console.log( bulbTypeText + " button on" );
-            }
+
         } )
     } );
 
