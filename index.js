@@ -12,6 +12,18 @@ let stopLight = document.getElementById('stopLight');
        }
   });
 
+  //add event listener to detect a mouse event for the stop button
+  stopButton.addEventListener('mouseenter', () => {
+    console.log('Entered stop button')
+  });
+
+  //add event listner to log mouse leave event for the stop button
+  stopButton.addEventListener('mouseleave', () => {
+    console.log('Left stop button')
+  });
+
+
+
 var yellowOn = false
 let slowButton = document.getElementById('slowButton');
 let slowLight = document.getElementById('slowLight');
@@ -26,6 +38,16 @@ let slowLight = document.getElementById('slowLight');
     }
 });
 
+//add event listener to detect a mouse event for the slow button
+slowButton.addEventListener('mouseenter', () => {
+  console.log('Entered slow button')
+});
+
+//add event listener to detect a mouse event for the slow button
+slowButton.addEventListener('mouseleave', () => {
+  console.log('Left slow button')
+});
+
 var greenOn = false
 let goButton = document.getElementById('goButton');
 let goLight = document.getElementById('goLight');
@@ -38,4 +60,14 @@ let goLight = document.getElementById('goLight');
       goLight.style.background = "black";
       return greenOn = false;
     }
+});
+
+//add event listener to detect a mouse event for the go button
+goButton.addEventListener('mouseenter', () => {
+  console.log('Entered go button')
+});
+
+//add event listener to detect a mouse event for the go button
+goButton.addEventListener('mouseleave', () => {
+  console.log('Left go button')
 });
